@@ -16,5 +16,11 @@ Route::get('/', function () {
 });
 
 Route::get('/pizza', function () {
-    return view('pizza');
+
+    $param=[
+        'name'=>"Osman",
+        'surname'=>"Bytyqi"
+    ];
+    
+    return view('pizza',$param);
 });
