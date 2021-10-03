@@ -71,7 +71,25 @@
                 <div class="title m-b-md">
                     Pizza's house
 
-                    <p>{{$name}}-{{$surname}}</p>
+                    <p>{{$name}}-{{$surname}}- {{$price}}</p>
+
+                   @if($price >12)
+                     <p>pizza is expensive</p>
+
+                   @elseif($price < 5)
+                   <p>pizza is cheap</p>   
+
+                   @else
+                    <p>pizza is normally priced</p>
+
+                   @endif
+
+                   @unless($name=='osman')
+                   <p>you are not Osman</p>
+
+                   @endunless
+
+                
 
                 </div>
 

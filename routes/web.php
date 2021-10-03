@@ -18,8 +18,9 @@ Route::get('/', function () {
 Route::get('/pizza', function () {
 
     $param=[
-        'name'=>"Osman",
-        'surname'=>"Bytyqi"
+        'name'=>'Osman',
+        'surname'=>'Bytyqi',
+        'price'=>10
     ];
     
     return view('pizza',$param);
