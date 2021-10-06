@@ -14,14 +14,13 @@
 Route::get('/', function () {
     return view('welcome');
 });
-
-Route::get('/pizza', function () {
-
-    $param=[
-        'name'=>'Osman',
-        'surname'=>'Bytyqi',
-        'price'=>10
+Route::get('/pizzas', function () {
+    // get data from a database
+    $pizzas = [
+      ['type' => 'hawaiian', 'base' => 'cheesy crust'],
+      ['type' => 'volcano', 'base' => 'garlic crust'],
+      ['type' => 'veg supreme', 'base' => 'thin & crispy']
     ];
-    
-    return view('pizza',$param);
-});
+    return view('pizzas', ['pizzas' => $pizzas]);
+  });
+  
