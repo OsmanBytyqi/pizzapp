@@ -27,4 +27,12 @@ Route::get('/pizzas', function () {
     ]
   );
   });
-  
+
+
+  Route::get('/details/{id}',function($id){
+
+    return view('details',['id'=>$id]);
+
+
+
+  });
