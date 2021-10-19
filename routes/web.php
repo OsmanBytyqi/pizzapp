@@ -18,3 +18,4 @@ Route::get('/pizzas', 'PizzaController@index');
 
 
   Route::get('/details/{id}','PizzaController@show');
+  Route::get('pizzas/create','PizzaController@create');
