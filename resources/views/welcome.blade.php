@@ -20,7 +20,10 @@
     <img src="/img/pizza.png" alt="pizza house logo">
         <div class="title m-b-md">
             The North's Best Pizzas
+        
         </div>
+        <a href="/pizzas/create">Create pizza</a>
+
     </div>
 </div>
 @endsection
